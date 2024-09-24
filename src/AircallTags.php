@@ -82,7 +82,7 @@ class AircallTags
     {
         $path = $this->tagPath($id);
 
-        return $this->client->get($path);
+        return $this->client->delete($path);
     }
 
     public function tagPath(int $id): string
