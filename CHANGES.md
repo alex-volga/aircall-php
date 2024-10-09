@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## [2.2.0](https://github.com/alex-volga/aircall-php/compare/v2.1.2...v2.2.0) (2024-09-24)
+## [2.2.0](https://github.com/alex-volga/aircall-php/compare/v2.1.2...v2.2.0) (2024-10-09)
 ### Features
 * Add [Integration](https://developer.aircall.io/api-references/#integration)
 * Add [AircallNumbers::registrationStatus](https://developer.aircall.io/api-references/#registration-status)
