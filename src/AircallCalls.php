@@ -82,7 +82,7 @@ class AircallCalls
      *
      * @return mixed
      */
-    public function transfert(int $id, array $options = [])
+    public function transfers(int $id, array $options = [])
     {
         $path = $this->callPath($id);
 
@@ -231,6 +231,58 @@ class AircallCalls
         $path = $this->callPath($id);
 
         return $this->client->put($path.'/unarchive');
+    }
+
+    /**
+     * Retrieve a transcription
+     *
+     * @param int|string $callId
+     * @return mixed
+     */
+    public function transcription(int|string $callId)
+    {
+        $path = $this->callPath($callId);
+
+        return $this->client->get($path.'/transcription');
+    }
+
+    /**
+     * Retrieve sentiments
+     *
+     * @param int|string $callId
+     * @return mixed
+     */
+    public function sentiments(int|string $callId)
+    {
+        $path = $this->callPath($callId);
+
+        return $this->client->get($path.'/sentiments');
+    }
+
+    /**
+     * Retrieve topics
+     *
+     * @param int|string $callId
+     * @return mixed
+     */
+    public function topics(int|string $callId)
+    {
+        $path = $this->callPath($callId);
+
+        return $this->client->get($path.'/topics');
+    }
+
+    /**
+     * Retrieve a summary
+     *
+     * @param int|string $callId
+     * @return mixed
+     */
+    public function summary(int|string $callId)
+    {
+        $path = $this->callPath($callId);
+
+        return $this->client->get($path.'/summary');
     }
 
 

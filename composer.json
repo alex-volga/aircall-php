@@ -1,12 +1,12 @@
 {
-    "name": "antoinelemaire/aircall-php",
-    "description": "Aircall API client built on top of Guzzle 6",
+    "name": "alex-volga/aircall-php",
+    "description": "Aircall API client built on top of Guzzle",
     "keywords": ["aircall", "aircall.io", "api", "guzzle"],
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "AntoineLemaire",
-            "homepage": "https://github.com/AntoineLemaire"
+            "name": "Alex Volga",
+            "homepage": "https://github.com/alex-volga"
         }
     ],
     "autoload": {
@@ -15,7 +15,7 @@
         }
     },
     "require": {
-        "php": ">= 7.1",
+        "php": ">= 8.0",
         "ext-json": "*",
         "guzzlehttp/guzzle": "~6.0|~7.0"
     },

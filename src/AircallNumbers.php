@@ -61,6 +61,20 @@ class AircallNumbers
         return $this->client->put($path, $options);
     }
 
+    /**
+     * Update a single Number.
+     *
+     * @throws GuzzleException
+     *
+     * @return mixed
+     */
+    public function registrationStatus(int $id)
+    {
+        $path = $this->numberPath($id);
+
+        return $this->client->get($path.'/registration_status');
+    }
+
     public function numberPath(int $id): string
     {
         return self::BASE_ENDPOINT.'/'.$id;

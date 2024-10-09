@@ -43,6 +43,9 @@ class AircallClient
     /** @var AircallTeams */
     public $teams;
 
+    /** @var AircallIntegrations */
+    public $integrations;
+
     /**
      * @param string $apiID    app ID
      * @param string $apiToken api Token
@@ -57,6 +60,7 @@ class AircallClient
         $this->contacts = new AircallContacts($this);
         $this->tags = new AircallTags($this);
         $this->teams = new AircallTeams($this);
+        $this->integrations = new AircallIntegrations($this);
 
         $this->apiID = $apiID;
         $this->apiToken = $apiToken;

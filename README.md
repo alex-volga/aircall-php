@@ -3,7 +3,7 @@ This is a non-official Aircall PHP library which provides access to the Aircall 
 Api references: https://developer.aircall.io/api-references/
 
 ## API version
-Last update: 1.11.2
+Last update: [1.42.0](https://developer.aircall.io/api-references/#changelog)
 
 
 ## Installation
@@ -12,7 +12,7 @@ The recommended way to install aircall-php is through [Composer](https://getcomp
 
 
 ```
-composer require antoinelemaire/aircall-php
+composer require alex-volga/aircall-php
 ```
 
 ## Usage
